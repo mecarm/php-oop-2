@@ -12,7 +12,7 @@ class Prodotto{
         String $name,
         String $immagine,
         Category $category,
-        Float $prezzo,
+        Float $prezzo
     ) {
         $this->name = $name;
         $this->immagine = $immagine;

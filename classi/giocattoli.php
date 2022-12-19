@@ -12,12 +12,25 @@ class Giocattoli extends Prodotto{
         Category $category,
         Float $prezzo,
         
-        Int $caratteristiche,
+        String $caratteristiche,
         String $dimensioni
     ) {
         $this->caratteristiche = $caratteristiche;
         $this->dimensioni = $dimensioni;
         parent::__construct($name, $immagine, $category, $prezzo);
+    }
+    public function displayProjectCard() {
+        echo '<div class="card mt-4 mx-3 col-3" >
+                <div class="card-body">
+                    <img class="img-fluid" src="'. $this->immagine .'">
+                    <h5 class="card-title">' . $this->name . '</h5>
+                    <p class="card-text">' . $this->category->name . $this->category->icon . '</p
+                    <ul class="list-unstyled">
+                        <li>Peso:' . $this->caratteristiche . '</li>
+                        <li>Ingredienti:' . $this->dimensioni . '</li>
+                    </ul>
+                </div>
+            </div>';
     }
 }
 
