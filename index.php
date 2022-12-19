@@ -43,10 +43,10 @@ $prodotti = [
     <div class=" w-75 m-auto">
         <h1>BoolShop</h1>
         <h3>I nostri prodotti</h3>
-        <div class="row">
+        <div class="row justify-content-between">
             <?php
             foreach ($prodotti as $card) {
-    
+                //Attivo metodi contenuti in cibo.php accessori.php e giocattoli.php che stampa card dinamiche
                 $card->displayProjectCard();
             }
             ?>
