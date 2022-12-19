@@ -26,10 +26,11 @@ class Accessori extends Prodotto{
                     <img class="img-fluid" src="'. $this->immagine .'">
                     <h5 class="card-title">' . $this->name . '</h5>
                     <p class="card-text">' . $this->category->name . $this->category->icon . '</p
-                    <u class="list-unstyled">
-                        <li>Peso:' . $this->materiale . '</li>
-                        <li>Ingredienti:' . $this->dimensioni . '</li>
-                    </u>
+                    <ul class="list-unstyled">
+                        <li>Prezzo: ' . $this->prezzo . '€</li>
+                        <li>Peso: ' . $this->materiale . '</li>
+                        <li>Ingredienti: ' . $this->dimensioni . '</li>
+                    </ul>
                 </div>
             </div>';
     }

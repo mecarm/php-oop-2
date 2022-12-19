@@ -26,8 +26,9 @@ class Giocattoli extends Prodotto{
                     <h5 class="card-title">' . $this->name . '</h5>
                     <p class="card-text">' . $this->category->name . $this->category->icon . '</p
                     <ul class="list-unstyled">
-                        <li>Peso:' . $this->caratteristiche . '</li>
-                        <li>Ingredienti:' . $this->dimensioni . '</li>
+                        <li>Prezzo: ' . $this->prezzo . '€</li>
+                        <li>Peso: ' . $this->caratteristiche . '</li>
+                        <li>Ingredienti: ' . $this->dimensioni . '</li>
                     </ul>
                 </div>
             </div>';

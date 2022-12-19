@@ -27,8 +27,9 @@ class Cibo extends Prodotto{
                     <h5 class="card-title">' . $this->name . '</h5>
                     <p class="card-text">' . $this->category->name . $this->category->icon . '</p
                     <ul class="list-unstyled">
-                        <li>Peso:' . $this->peso . '</li>
-                        <li>Ingredienti:' . $this->ingredienti . '</li>
+                        <li>Prezzo: ' . $this->prezzo . '€</li>
+                        <li>Peso: ' . $this->peso . 'g</li>
+                        <li>Ingredienti: ' . $this->ingredienti . '</li>
                     </ul>
                 </div>
             </div>';
