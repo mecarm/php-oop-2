@@ -7,6 +7,9 @@ include_once __DIR__ . '/classi/cibo.php';
 include_once __DIR__ . '/classi/accessori.php';
 include_once __DIR__ . '/classi/giocattoli.php';
 
+//Includo user con il traits al suo interno address
+include_once __DIR__ . '/classi/user.php';
+
 $category =[
      'cane'=> new Category('Cane ', '<i class="fa-solid fa-dog"></i>'),
      'gatto'=> new Category('Gatto ', '<i class="fa-solid fa-cat"></i>'),
@@ -52,6 +55,25 @@ $prodotti = [
             ?>
         </div>
     </div>
+
+    <!-- TEST USER -->
+    <?php
+
+    $user = new User('Alex', 'melecarmine@gmail.com');
+
+    $user->street = 'Via Pinco Pallino';
+
+    //Stampare gli errori sottoforma di eccezioni
+    try{
+        $user->setEta('venti');
+    }
+    catch(Exception $e){
+        echo 'Si è verificato un errore: ' . $e->getMessage();
+    }
+
+    var_dump($user);
+
+    ?>
 
     <!-- Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
