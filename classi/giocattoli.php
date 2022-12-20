@@ -27,8 +27,8 @@ class Giocattoli extends Prodotto{
                     <p class="card-text">' . $this->category->name . $this->category->icon . '</p>
                     <ul class="list-unstyled">
                         <li>Prezzo: ' . $this->prezzo . '€</li>
-                        <li>Peso: ' . $this->caratteristiche . '</li>
-                        <li>Ingredienti: ' . $this->dimensioni . '</li>
+                        <li>Caratteristiche: ' . $this->caratteristiche . '</li>
+                        <li>Dimensioni: ' . $this->dimensioni . '</li>
                     </ul>
                 </div>
             </div>';

@@ -28,8 +28,8 @@ class Accessori extends Prodotto{
                     <p class="card-text">' . $this->category->name . $this->category->icon . '</p>
                     <ul class="list-unstyled">
                         <li>Prezzo: ' . $this->prezzo . '€</li>
-                        <li>Peso: ' . $this->materiale . '</li>
-                        <li>Ingredienti: ' . $this->dimensioni . '</li>
+                        <li>Materiale: ' . $this->materiale . '</li>
+                        <li>Dimensioni: ' . $this->dimensioni . '</li>
                     </ul>
                 </div>
             </div>';

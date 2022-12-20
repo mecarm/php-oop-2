@@ -8,9 +8,9 @@ include_once __DIR__ . '/classi/accessori.php';
 include_once __DIR__ . '/classi/giocattoli.php';
 
 $category =[
-     'cane'=> new Category('Cane', '<i class="fa-solid fa-dog"></i>'),
-     'gatto'=> new Category('Gatto', '<i class="fa-solid fa-cat"></i>'),
-     'uccello'=> new Category('Uccello', '<i class="fa-solid fa-crow"></i>')
+     'cane'=> new Category('Cane ', '<i class="fa-solid fa-dog"></i>'),
+     'gatto'=> new Category('Gatto ', '<i class="fa-solid fa-cat"></i>'),
+     'uccello'=> new Category('Uccello ', '<i class="fa-solid fa-crow"></i>')
 ];
 
 // var_dump($category);
